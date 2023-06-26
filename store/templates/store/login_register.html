@@ -9,13 +9,13 @@
         {% csrf_token %}
 
         <label>Username:</lable>
-        <input type="text" name="username" placeholder="Enter Username" />
+        <input type="text" name="username" placeholder="Enter Username" /> <br><br>
 
         <label>Password:</lable>
-        <input type="password" name="password" placeholder="Enter Password" />
+        <input type="password" name="password" placeholder="Enter Password" /> <br><br>
 
         <input type="submit" value="Login" />
-    </form>
+    </form> <br><br>
 
     <p>havent sign up yet?</p>
     <a href="{% url 'register' %}">Sign up</a>
@@ -28,7 +28,7 @@
         {% csrf_token %}
         {{form.as_p}}    
         <input type="submit" value="Register" />
-    </form>
+    </form> <br>
     <p>Already signed up yet?</p>
     <a href="{% url 'login' %}">Login</a>
 </div>
